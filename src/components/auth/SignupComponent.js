@@ -3,7 +3,7 @@ export default class SignUp extends Component {
   render() {
     return (
       <form>
-        <h3>Sign Up</h3>
+        <h3>Register</h3>
         <div className="mb-3">
           <label>Username</label>
           <input type="text" className="form-control" placeholder="Username" />
@@ -27,11 +27,11 @@ export default class SignUp extends Component {
         </div>
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
-            Sign Up
+            Submit
           </button>
         </div>
         <p className="forgot-password text-right">
-          Already registered <a href="/sign-in">sign in?</a>
+          Already registered <a href="/sign-in">Login now?</a>
         </p>
       </form>
     );
