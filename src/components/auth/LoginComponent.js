@@ -3,6 +3,7 @@ export default class Login extends Component {
   render() {
     return (
       <form>
+        {/* <div className="login-box"></div> */}
         <h3>Login</h3>
         <div className="mb-3">
           <label>UserName</label>
