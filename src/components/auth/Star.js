@@ -1,6 +1,6 @@
 import React from "react";
 
-function Review() {
+function Star() {
   <div>
     <Rating
       name="text-feedback"

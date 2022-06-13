@@ -1,12 +1,16 @@
 import React from "react";
-import { CDBFooter } from "cdbreact";
 function Footer() {
   return (
-    <nav class="navbar navbar-dark bg-primary fix-bottom">
-      <div className="row col-12 d-flex justify-content-center text-white">
-        <h1>Footer</h1>
+    <div>
+      <div
+        className="text-center text-dark p-3"
+        style={{
+          backgroundColor: "#00000020",
+        }}
+      >
+        Footer
       </div>
-    </nav>
+    </div>
   );
 }
 

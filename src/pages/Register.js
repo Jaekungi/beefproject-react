@@ -1,6 +1,6 @@
 import React from "react";
 import SignupComponent from "../components/auth/SignupComponent";
-import Header from "../components/auth/Header";
+import Header from "../components/header/HomeHeader";
 import { Outlet } from "react-router-dom";
 import Footer from "../components/auth/Footer";
 
