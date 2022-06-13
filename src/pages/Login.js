@@ -4,7 +4,10 @@ import LoginComponent from "../components/auth/LoginComponent";
 function Login() {
   return (
     <div>
+      <Header />
+      <Outlet />
       <LoginComponent />
+      <Footer />
     </div>
   );
 }
