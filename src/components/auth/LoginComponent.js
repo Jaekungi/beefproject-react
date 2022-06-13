@@ -23,7 +23,7 @@ export default class Login extends Component {
         </div>
         <div className="mb-3"></div>
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary mb-3 gab-2">
             Submit
           </button>
         </div>

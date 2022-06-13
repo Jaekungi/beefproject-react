@@ -16,7 +16,7 @@ function Router() {
             <Route path="create" element={<CreateReview />} />
             <Route path="myblog" element={<MyBlog />} />
             <Route path="login" element={<Login />} />
-            <Route path="register" element={<Register />} />
+            <Route path="register" element={<Register />} /> 
           </Route>
         </>
       ) : (
