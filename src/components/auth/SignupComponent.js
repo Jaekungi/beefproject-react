@@ -9,8 +9,8 @@ function SignupComponent(props) {
             type="username.1"
             className="form-control mb-3"
             id="usernameid"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
+            aria-describedby="UserHelp"
+            placeholder="Enter username"
           />
         </div>
         <div className="form-group text-left mb-3">
