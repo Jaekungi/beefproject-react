@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 function HomePage() {
   return (
     <div>
-      <h1>home</h1>
+      <Header />
       <Outlet />
     </div>
   );
