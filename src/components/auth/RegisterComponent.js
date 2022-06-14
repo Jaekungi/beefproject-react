@@ -1,8 +1,14 @@
 import React, { useState } from "react";
-function SignupComponent(props) {
+function RegisterComponent(props) {
   return (
     <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
-      <form>
+      <form
+        className="mx-auto"
+        style={{
+          width: "400px",
+        }}
+      >
+        <h3>Register</h3>
         <div className="form-group text-left mb-3">
           <label htmlFor="username">Username</label>
           <input
@@ -39,4 +45,4 @@ function SignupComponent(props) {
   );
 }
 
-export default SignupComponent;
+export default RegisterComponent;
