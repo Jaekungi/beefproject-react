@@ -3,7 +3,7 @@ function Footer() {
   return (
     <div>
       <div
-        className="text-center text-dark p-3"
+        className="d-flex align-items-center p-0 text-dark"
         style={{
           backgroundColor: "#00000020",
         }}
