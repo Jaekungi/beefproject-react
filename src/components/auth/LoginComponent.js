@@ -2,9 +2,9 @@ import React, { Component } from "react";
 export default class Login extends Component {
   render() {
     return (
-      <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
+      <div className="color-overlay d-flex justify-content-center align-items-center">
         <form
-          className="mx-auto"
+          className="card rounded p-4 p-3"
           style={{
             width: "400px",
           }}

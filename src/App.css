@@ -71,3 +71,11 @@ html,
 .forgot-password a {
   color: #167bff;
 }
+
+.color-overlay {
+  position: absolute;
+  background-color: lightskyblue;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: normal;
+}

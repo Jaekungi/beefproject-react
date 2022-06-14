@@ -23,7 +23,6 @@ function HeaderFooter() {
       {isRootPage && <RootHeader />}
 
       <Outlet />
-      {/* <Footer /> */}
     </div>
   );
 }

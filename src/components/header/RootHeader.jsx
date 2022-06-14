@@ -11,10 +11,18 @@ function RootHeader() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
           <form className="d-flex">
-            <button className="btn btn-outline-success me-2" type="submit">
+            <button
+              className="btn btn-outline-success me-2"
+              type="submit"
+              href="/"
+            >
               Login
             </button>
-            <button className="btn btn-outline-success" type="submit">
+            <button
+              className="btn btn-outline-success"
+              type="submit"
+              
+            >
               Register
             </button>
           </form>
