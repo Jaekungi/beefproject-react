@@ -1,8 +1,26 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 function RegisterComponent(props) {
+  const { register } = useAuth();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleRegister = async (e) => {
+    try {
+      e.preventDefault();
+      const result = await register(username, password, confirmPassword);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div className="color-overlay d-flex justify-content-center align-items-center">
       <form
+        onSubmit={handleRegister}
         className="card rounded p-4 p-3"
         style={{
           width: "400px",
@@ -17,6 +35,8 @@ function RegisterComponent(props) {
             id="usernameid"
             aria-describedby="UserHelp"
             placeholder="Enter username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
           />
         </div>
         <div className="form-group text-left mb-3">
@@ -26,6 +46,8 @@ function RegisterComponent(props) {
             className="form-control mb-3"
             id="password"
             placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <div className="form-group text-left">
@@ -35,6 +57,8 @@ function RegisterComponent(props) {
             className="form-control mb-3"
             id="confirmPassword"
             placeholder="Confirm Password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </div>
         <button type="submit" className="btn btn-primary">

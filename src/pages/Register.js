@@ -5,9 +5,7 @@ import Footer from "../components/auth/Footer";
 function Register() {
   return (
     <div>
-      <RootHeader />
       <RegisterComponent />
-      <Footer />
     </div>
   );
 }

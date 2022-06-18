@@ -6,29 +6,37 @@ import MyBlog from "../pages/MyBlog";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import HeaderFooter from "../components/HeaderFooter";
+import AuthHeader from "../components/header/AuthHeader";
+import RootHeader from "../components/header/RootHeader";
+import { useAuth } from "../contexts/AuthContext";
+import { useLocation } from "react-router-dom";
 
 function Router() {
-  const user = false;
+  const location = useLocation();
+  // console.log(location.pathname);
+  const { user } = useAuth();
+  console.log(user);
   return (
     <Routes>
-      <Route path="/" element={<HeaderFooter />}>
-        {user ? (
-          <>
-            <Route path="/home" element={<HomePage />} />
+      {user ? (
+        <>
+          <Route path="/home" element={<HomePage />}>
             <Route path="create" element={<CreateReview />} />
             <Route path="myblog" element={<MyBlog />} />
-            <Route path="/" element={<Navigate to="/home" />} />
-            <Route path="*" element={<Navigate to="/home" />} />
-          </>
-        ) : (
-          <>
-            <Route path="/auth/login" element={<Login />} />
-            <Route path="/auth/register" element={<Register />} />
-            <Route path="/" element={<Navigate to="/auth/login" />} />
-            <Route path="*" element={<Navigate to="/auth/login" />} />
-          </>
-        )}
-      </Route>
+          </Route>
+          {/* <Route path="" element={<Navigate to="/home" />} /> */}
+          <Route path="*" element={<Navigate to="/home" />} />
+        </>
+      ) : (
+        <>
+          <Route path="/" element={<RootHeader />}>
+            <Route path="auth/login" element={<Login />} />
+            <Route path="auth/register" element={<Register />} />
+          </Route>
+          <Route path="" element={<Navigate to="/auth/login" />} />
+          <Route path="*" element={<Navigate to="/auth/login" />} />
+        </>
+      )}
     </Routes>
   );
 }

@@ -1,7 +1,8 @@
 import React from "react";
+
 function Footer() {
   return (
-    <div className="main-footer">
+    <div className="main-footer bg-white">
       <div className="container">
         <div className="row">
           <div className="col-md-3 col-sm-6">
@@ -9,7 +10,7 @@ function Footer() {
             <ul className="list-unstyle">
               <li>qwe</li>
               <li>qwe</li>
-              <li>qwe</li>
+              <li>qqqqqq</li>
               <li>qwe</li>
             </ul>
           </div>

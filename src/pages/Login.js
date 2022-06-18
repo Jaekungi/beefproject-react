@@ -1,15 +1,12 @@
 import React from "react";
-import Footer from "../components/auth/Footer";
 import LoginComponent from "../components/auth/LoginComponent";
-import RootHeader from "../components/header/RootHeader";
-function Register() {
+function Login() {
+  console.log("login");
   return (
     <div>
-      <RootHeader />
       <LoginComponent />
-      <Footer />
     </div>
   );
 }
 
-export default Register;
+export default Login;

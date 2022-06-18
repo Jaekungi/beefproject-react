@@ -71,3 +71,7 @@ html,
 .forgot-password a {
   color: #167bff;
 }
+
+.review:not(:first-child) {
+  margin-top: 35px;
+}
