@@ -20,11 +20,9 @@ function Router() {
     <Routes>
       {user ? (
         <>
-          <Route path="/home" element={<HomePage />}>
-            <Route path="create" element={<CreateReview />} />
-            <Route path="myblog" element={<MyBlog />} />
-          </Route>
-          {/* <Route path="" element={<Navigate to="/home" />} /> */}
+          <Route path="/home" element={<HomePage />}></Route>
+          <Route path="myblog" element={<MyBlog />} />
+          <Route path="create" element={<CreateReview />} />
           <Route path="*" element={<Navigate to="/home" />} />
         </>
       ) : (

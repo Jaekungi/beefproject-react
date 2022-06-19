@@ -20,24 +20,15 @@ function BodyHome() {
         <div class="col-8 border-bottom border-dark">
           <h1>TokyoXXX Ari</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed
-            ea inventore similique non, optio libero omnis repudiandae delectus
-            cupiditate, nisi officia quia, explicabo odit dolorem tenetur
-            nesciunt. Deleniti, maxime? Eos, placeat eligendi sequi doloremque
-            inventore temporibus quam necessitatibus blanditiis neque natus
-            accusantium odio delectus commodi quo, voluptatum ipsam recusandae.
-            Molestias laboriosam minima omnis laudantium provident atque
-            adipisci ab laborum. Obcaecati enim delectus commodi vero sunt?
-            Possimus neque commodi nam at quod accusantium quisquam corporis
-            saepe quidem, pariatur, enim dolores, laboriosam illum sequi facilis
-            fugiat odit. Ducimus magnam est porro. Consequatur, qui velit,
-            distinctio eaque ipsa aut similique dicta, quos obcaecati
-            voluptatibus cumque incidunt optio doloribus veritatis magni sit
-            corporis ut labore! Ea, accusantium hic eum nihil eveniet explicabo
-            reiciendis! Modi odio, amet tempore magnam a voluptate excepturi
-            totam maiores aliquam quasi aperiam dolorem fugit, sunt doloribus
-            suscipit labore deserunt, explicabo vitae deleniti. Commodi neque
-            corrupti id asperiores, labore ducimus.
+            Argentinean Style Steakhouse and Churrascaria located in the 541
+            Sukhumvit Road. The glass-fronted restaurant-butcher is a place with
+            plenty seating room for many diners. The warm and cosy ambiance
+            makes guests instantly feel at ease to have a dish from the
+            extensive à la carte steak menu, buffet Churrasco rodizio or gourmet
+            salad bar. As can be expected, at EL TORO Steakhouse, a wide
+            selection of fine wines, beers, spirits and cocktails are available
+            to everyone’s delight. In addition, our cooks and waiters deliver a
+            natural warm service and hospitality.
           </p>
         </div>
       </div>
@@ -57,24 +48,15 @@ function BodyHome() {
         <div class="col-8 border-bottom border-dark">
           <h1>God Beefer</h1>
           <p className="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed
-            ea inventore similique non, optio libero omnis repudiandae delectus
-            cupiditate, nisi officia quia, explicabo odit dolorem tenetur
-            nesciunt. Deleniti, maxime? Eos, placeat eligendi sequi doloremque
-            inventore temporibus quam necessitatibus blanditiis neque natus
-            accusantium odio delectus commodi quo, voluptatum ipsam recusandae.
-            Molestias laboriosam minima omnis laudantium provident atque
-            adipisci ab laborum. Obcaecati enim delectus commodi vero sunt?
-            Possimus neque commodi nam at quod accusantium quisquam corporis
-            saepe quidem, pariatur, enim dolores, laboriosam illum sequi facilis
-            fugiat odit. Ducimus magnam est porro. Consequatur, qui velit,
-            distinctio eaque ipsa aut similique dicta, quos obcaecati
-            voluptatibus cumque incidunt optio doloribus veritatis magni sit
-            corporis ut labore! Ea, accusantium hic eum nihil eveniet explicabo
-            reiciendis! Modi odio, amet tempore magnam a voluptate excepturi
-            totam maiores aliquam quasi aperiam dolorem fugit, sunt doloribus
-            suscipit labore deserunt, explicabo vitae deleniti. Commodi neque
-            corrupti id asperiores, labore ducimus.
+            Here at The House of Meat you have the luxury of choosing your steak
+            straight from the butchery. Our fridge counter display is arrange
+            with all cuts which allows all customers to evaluate and determine
+            the quality of the meat. Because we offer cuts of beef from
+            different countries such as US, Australia, New Zealand and Thailand,
+            the display certainly makes much more easier to make the right
+            choice for your dinner. After all, customer satisfaction is our
+            priority. Orders online can be made via HappyFresh and pandamart to
+            be delivered in the same day.
           </p>
         </div>
       </div>

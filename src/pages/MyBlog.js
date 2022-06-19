@@ -1,13 +1,12 @@
 import React from "react";
-import CreateReview from "./CreateReview";
-import { Outlet } from "react-router-dom";
 import Footer from "../components/auth/Footer";
+import HomeHeader from "../components/header/HomeHeader";
 
 function MyBlog() {
   return (
-    <div>
-      <Outlet />
-      <CreateReview />
+    <div className="d-flex-column">
+      <HomeHeader />
+
       <Footer />
     </div>
   );

@@ -1,19 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 function Create() {
+  const [title, setTitle] = useState("");
+  const [subTitle, setSubTitle] = useState("");
+  const [context, setContext] = useState("");
+
   return;
-  <div className="create.body">
-    <div className="create.box">
-      <div className="comment-form">
-        <div className="comment-title"></div>
-        <div className="comment-subtitle"></div>
-        <div className="comment-box"></div>
-        <div className="comment-img"></div>
-      </div>
-    </div>
-    <button className="submit">POST!</button>
-  </div>;
+  <></>;
 }
 
 export default Create;

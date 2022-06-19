@@ -1,10 +1,16 @@
 import React from "react";
-import Create from "../components/auth/Create";
+import BodyCreateReview from "../components/layout/BodyCreateReview.jsx";
+import HomeHeader from "../components/header/HomeHeader.jsx";
+import Footer from "../components/auth/Footer.jsx";
 
 function CreateReview() {
   return (
-    <div>
-      <Create />
+    <div className="d-flex-column">
+      <HomeHeader />
+      <div className="w-75 p-3 mx-auto m-5 d-flex justify-content-center">
+        <BodyCreateReview />
+      </div>
+      <Footer />
     </div>
   );
 }
