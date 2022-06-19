@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "../../config/axios";
 
 function BodyCreateReview() {
   const reviewData = new FormData();
@@ -7,12 +8,21 @@ function BodyCreateReview() {
   const [context, setContext] = useState("");
   const [files, setFiles] = useState("");
 
-  reviewData.append("title", title);
-  reviewData.append("SubTitle", subTitle);
-  reviewData.append("context", context);
-  reviewData.append("Image", files);
+  // console.log("title", title);
+  // console.log("subTitle", subTitle);
 
   console.log(reviewData.getAll("title"));
+
+  const postReview = async (e) => {
+    try {
+      e.preventDefault();
+      reviewData.append("title", title);
+      reviewData.append("SubTitle", subTitle);
+      reviewData.append("context", context);
+      reviewData.append("image", files);
+      const result = await axios.post("/review", reviewData);
+    } catch (err) {}
+  };
 
   return (
     <div className="row " style={{ width: "60%", justifyContent: "center" }}>
@@ -75,7 +85,11 @@ function BodyCreateReview() {
         </div>
       </form>
 
-      <button type="submit" className="btn btn-primary m-1 col-3">
+      <button
+        type="submit"
+        className="btn btn-primary m-1 col-3"
+        onClick={postReview}
+      >
         Post Now!
       </button>
     </div>

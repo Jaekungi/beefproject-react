@@ -32,6 +32,7 @@ function BodyHome() {
           </p>
         </div>
       </div>
+
       <div className="row review">
         <div className="col-4">
           <img
@@ -40,7 +41,7 @@ function BodyHome() {
               width: 350,
               height: 350,
             }}
-            src={steak01}
+            src={steak01} //useState จาก Object
             alt=""
           />
         </div>
