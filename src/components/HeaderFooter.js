@@ -1,11 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import IdentificationHeader from "./header/UserHeader";
-import Footer from "./auth/Footer";
 import checklocation from "../services/checklocation";
 import { useLocation } from "react-router-dom";
-import AuthHeader from "../components/header/AuthHeader";
-import RootHeader from "../components/header/RootHeader";
+import AuthHeader from "./header/AuthHeader";
+import RootHeader from "./header/RootHeader";
 import HomeHeader from "./header/HomeHeader";
 import UserHeader from "./header/UserHeader";
 

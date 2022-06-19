@@ -4,8 +4,7 @@ import { useAuth } from "../../contexts/AuthContext";
 import userPic from "../../img/user.png";
 
 function HomeHeader() {
-  const { logout } = useAuth();
-  // const { userId } = useAuth();
+  const { logout, user } = useAuth();
 
   return (
     <nav className="navbar navbar-dark bg-primary">
@@ -44,13 +43,8 @@ function HomeHeader() {
           >
             LogOut
           </button>
-          <div className="text-white mt-1" style={{ fontSize: "12px" }}>
-            {}
-            Test002
-          </div>
-          <div className="text-white " style={{ fontSize: "12px" }}>
-            {" "}
-            UserId : 123456
+          <div className="text-white mt-1 m-2" style={{ fontSize: "15px" }}>
+            {user.username}
           </div>
         </div>
         <img

@@ -15,7 +15,7 @@ function RootHeader() {
             <form className="d-flex">
               <Link
                 to="/auth/login"
-                className="btn btn-outline-success me-2"
+                className="btn btn-success me-2"
                 type="submit"
                 href="/"
               >
@@ -23,7 +23,7 @@ function RootHeader() {
               </Link>
               <Link
                 to="/auth/register"
-                className="btn btn-outline-success"
+                className="btn btn-success"
                 type="submit"
               >
                 Register

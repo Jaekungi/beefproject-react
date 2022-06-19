@@ -1,66 +1,81 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 
 function BodyCreateReview() {
-  //   const [title, setTitle] = useState("");
-  //   const [subTitle, setSubTitle] = useState("");
-  //   const [context, setContext] = useState("");
+  const reviewData = new FormData();
+  const [title, setTitle] = useState("");
+  const [subTitle, setSubTitle] = useState("");
+  const [context, setContext] = useState("");
+  const [files, setFiles] = useState("");
+
+  reviewData.append("title", title);
+  reviewData.append("SubTitle", subTitle);
+  reviewData.append("context", context);
+  reviewData.append("Image", files);
+
+  console.log(reviewData.getAll("title"));
 
   return (
-    <div class="row " style={{ width: "60%", justifyContent: "center" }}>
+    <div className="row " style={{ width: "60%", justifyContent: "center" }}>
       <form>
-        <div class="mb-1">
-          <label for="titleReview" class="form-label">
+        <div className="mb-1">
+          <label for="titleReview" className="form-label">
             Main Title
           </label>
           <input
-            class="form-control"
+            className="form-control"
             type="text"
             placeholder="Enter Title"
-            // onChange={(event) => {
-            //   setTitle.event.target.value;
-            // }}
+            onChange={(e) => {
+              setTitle(e.target.value);
+            }}
           />
-          <div class="form-text text-danger">Title is required!</div>
+          <div className="form-text text-danger">Title is required!</div>
         </div>
-        <div class="mb-3">
-          <label for="subTitle" class="form-label">
+        <div className="mb-3">
+          <label for="subTitle" className="form-label">
             Sub-Title
           </label>
           <input
-            class="form-control"
+            className="form-control"
             type="text"
-            // onChange={(event) => {
-            //   setSubTitle.event.target.value;
-            // }}
+            onChange={(e) => {
+              setSubTitle(e.target.value);
+            }}
           />
-          <div class="form-text">Sub-Title is not really nessesary</div>
+          <div className="form-text">Sub-Title is not really nessesary</div>
         </div>
       </form>
 
-      <div class="input-group mb-1">
-        <input type="file" class="form-control" />
+      <div className="input-group mb-1">
+        <input
+          type="file"
+          className="form-control"
+          onChange={(e) => setFiles(e.target.files[0])}
+        />
       </div>
-      <div class="form-text mb-4 text-danger">Image is required!</div>
+      <div className="form-text mb-4 text-danger">Image is required!</div>
 
       <form>
-        <div class="mb-3">
-          <label for="textdetail" class="form-label">
+        <div className="mb-3">
+          <label for="textdetail" className="form-label">
             Context
           </label>
           <textarea
-            class="form-control"
+            className="form-control"
             type="text"
             placeholder="Enter context here..!"
             rows="4"
-            // onChange={(event) => {
-            //   setContext.event.target.value;
-            // }}
+            onChange={(e) => {
+              setContext(e.target.value);
+            }}
           />
-          <div class="form-text text-danger">Context need to be filled!</div>
+          <div className="form-text text-danger">
+            Context need to be filled!
+          </div>
         </div>
       </form>
 
-      <button type="submit" class="btn btn-primary m-1 col-3">
+      <button type="submit" className="btn btn-primary m-1 col-3">
         Post Now!
       </button>
     </div>

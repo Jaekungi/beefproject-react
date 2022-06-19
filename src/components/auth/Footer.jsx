@@ -54,8 +54,7 @@ const Footer = () => (
     </div>
 
     <div className="footer-copyright text-center py-3">
-      © 2020 Copyright:
-      <a href="https://google/"> Google it here!</a>
+      © 2022 Copyright: Only create for education purpose @CodeCamp#11
     </div>
   </footer>
 );

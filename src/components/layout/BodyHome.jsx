@@ -4,9 +4,9 @@ import "../../index.css";
 
 function BodyHome() {
   return (
-    <div class="row " style={{ width: "95%", justifyContent: "center" }}>
-      <div class="row review">
-        <div class="col-4">
+    <div className="row " style={{ width: "95%", justifyContent: "center" }}>
+      <div className="row review">
+        <div className="col-4">
           <img
             className="rounded-3"
             style={{
@@ -17,7 +17,7 @@ function BodyHome() {
             alt=""
           />
         </div>
-        <div class="col-8 border-bottom border-dark">
+        <div className="col-8 border-bottom border-dark">
           <h1>TokyoXXX Ari</h1>
           <p>
             Argentinean Style Steakhouse and Churrascaria located in the 541
@@ -32,8 +32,8 @@ function BodyHome() {
           </p>
         </div>
       </div>
-      <div class="row review">
-        <div class="col-4">
+      <div className="row review">
+        <div className="col-4">
           <img
             className="rounded-3"
             style={{
@@ -45,7 +45,7 @@ function BodyHome() {
           />
         </div>
 
-        <div class="col-8 border-bottom border-dark">
+        <div className="col-8 border-bottom border-dark">
           <h1>God Beefer</h1>
           <p className="">
             Here at The House of Meat you have the luxury of choosing your steak

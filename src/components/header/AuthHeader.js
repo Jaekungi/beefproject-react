@@ -1,8 +1,8 @@
-import React from "react";
+// import React from "react";
+// import { Outlet } from "react-router-dom";
 
-function AuthHeader() {
-  return;
-  // <nav class="navbar navbar-dark bg-primary"></nav>;
-}
+// function AuthHeader() {
+//   return;
+// }
 
-export default AuthHeader;
+// export default AuthHeader;
