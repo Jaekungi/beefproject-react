@@ -1,8 +1,21 @@
 import tokyoxxx from "../../img/tokyoxxx.jpg";
-import steak01 from "../../img/steak01.jpg";
 import "../../index.css";
+import { useEffect, useState } from "react";
+import axios from "../../config/axios";
 
 function BodyHome() {
+  const [AllReview, setAllReview] = useState();
+  useEffect(() => {
+    const fetchPost = async () => {
+      try {
+        const review = await axios.get("/review");
+        setAllReview(review.data.reviews);
+      } catch (err) {}
+    };
+    fetchPost();
+  }, []);
+  console.log(AllReview);
+
   return (
     <div className="row " style={{ width: "95%", justifyContent: "center" }}>
       <div className="row review">
@@ -19,6 +32,7 @@ function BodyHome() {
         </div>
         <div className="col-8 border-bottom border-dark">
           <h1>TokyoXXX Ari</h1>
+          <h5>Best beef in Ari District</h5>
           <p>
             Argentinean Style Steakhouse and Churrascaria located in the 541
             Sukhumvit Road. The glass-fronted restaurant-butcher is a place with
@@ -32,35 +46,27 @@ function BodyHome() {
           </p>
         </div>
       </div>
+      {AllReview?.map((el) => (
+        <div key={el.id} className="row review">
+          <div className="col-4">
+            <img
+              className="rounded-3"
+              style={{
+                width: 350,
+                height: 350,
+              }}
+              src={el.image}
+              alt=""
+            />
+          </div>
 
-      <div className="row review">
-        <div className="col-4">
-          <img
-            className="rounded-3"
-            style={{
-              width: 350,
-              height: 350,
-            }}
-            src={steak01} //useState จาก Object
-            alt=""
-          />
+          <div className="col-8 border-bottom border-dark">
+            <h1>{el.title}</h1>
+            <h5>{el.subtitle}</h5>
+            <p className="">{el.reviewtext}</p>
+          </div>
         </div>
-
-        <div className="col-8 border-bottom border-dark">
-          <h1>God Beefer</h1>
-          <p className="">
-            Here at The House of Meat you have the luxury of choosing your steak
-            straight from the butchery. Our fridge counter display is arrange
-            with all cuts which allows all customers to evaluate and determine
-            the quality of the meat. Because we offer cuts of beef from
-            different countries such as US, Australia, New Zealand and Thailand,
-            the display certainly makes much more easier to make the right
-            choice for your dinner. After all, customer satisfaction is our
-            priority. Orders online can be made via HappyFresh and pandamart to
-            be delivered in the same day.
-          </p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

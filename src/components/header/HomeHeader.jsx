@@ -20,7 +20,7 @@ function HomeHeader() {
           Home
         </Link>
         <Link
-          to="/myblog"
+          to="/review/myblog"
           type="button"
           className="align-self-center btn btn-light p-2 me-3"
         >

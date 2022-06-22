@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { useAuth } from "../../contexts/AuthContext";
+import React, { useState } from 'react';
+import { useAuth } from '../../contexts/AuthContext';
 function RegisterComponent(props) {
   const { register } = useAuth();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   // const navigate = useNavigate();
 
   const handleRegister = async (e) => {
@@ -20,9 +20,10 @@ function RegisterComponent(props) {
     <div className="color-overlay d-flex justify-content-center align-items-center">
       <form
         onSubmit={handleRegister}
-        className="card rounded p-4 p-3"
+        className="card rounded p-4 p-3
+        "
         style={{
-          width: "400px",
+          width: '400px',
         }}
       >
         <h3>Register</h3>

@@ -1,33 +1,36 @@
-import React, { useState } from "react";
-import axios from "../../config/axios";
+import React, { useState } from 'react';
+import axios from '../../config/axios';
 
 function BodyCreateReview() {
   const reviewData = new FormData();
-  const [title, setTitle] = useState("");
-  const [subTitle, setSubTitle] = useState("");
-  const [context, setContext] = useState("");
-  const [files, setFiles] = useState("");
+  const [title, setTitle] = useState('');
+  const [subTitle, setSubTitle] = useState('');
+  const [context, setContext] = useState('');
+  const [files, setFiles] = useState('');
 
   // console.log("title", title);
   // console.log("subTitle", subTitle);
 
-  console.log(reviewData.getAll("title"));
+  // console.log(reviewData.getAll("title"));
 
   const postReview = async (e) => {
     try {
       e.preventDefault();
-      reviewData.append("title", title);
-      reviewData.append("SubTitle", subTitle);
-      reviewData.append("context", context);
-      reviewData.append("image", files);
-      const result = await axios.post("/review", reviewData);
+      reviewData.append('title', title);
+      reviewData.append('SubTitle', subTitle);
+      reviewData.append('context', context);
+      reviewData.append('image', files);
+      const result = await axios.post('/review', reviewData);
     } catch (err) {}
   };
 
   return (
-    <div className="row " style={{ width: "60%", justifyContent: "center" }}>
+    <div
+      className="row card w-50"
+      style={{ width: '95%', justifyContent: 'center' }}
+    >
       <form>
-        <div className="mb-1">
+        <div className="my-3 ">
           <label for="titleReview" className="form-label">
             Main Title
           </label>

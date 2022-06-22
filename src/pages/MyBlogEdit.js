@@ -1,16 +1,15 @@
-import React from "react";
 import Footer from "../components/auth/Footer";
 import HomeHeader from "../components/header/HomeHeader";
-import BodyMyBlog from "../components/layout/BodyMyBlog";
+import BodyEditReview from "../components/layout/BodyEditReview";
 
-function MyBlog() {
+function MyBlogEdit() {
   return (
     <div className="d-flex-column">
       <HomeHeader />
-      <BodyMyBlog />
+      <BodyEditReview />
       <Footer />
     </div>
   );
 }
 
-export default MyBlog;
+export default MyBlogEdit;

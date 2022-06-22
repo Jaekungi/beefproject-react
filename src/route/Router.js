@@ -5,15 +5,11 @@ import CreateReview from "../pages/CreateReview";
 import MyBlog from "../pages/MyBlog";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
-import HeaderFooter from "../components/HeaderFooter";
-import AuthHeader from "../components/header/AuthHeader";
 import RootHeader from "../components/header/RootHeader";
 import { useAuth } from "../contexts/AuthContext";
-import { useLocation } from "react-router-dom";
+import MyBlogEdit from "../pages/MyBlogEdit";
 
 function Router() {
-  const location = useLocation();
-  // console.log(location.pathname);
   const { user } = useAuth();
   console.log(user);
   return (
@@ -21,8 +17,9 @@ function Router() {
       {user ? (
         <>
           <Route path="/home" element={<HomePage />}></Route>
-          <Route path="myblog" element={<MyBlog />} />
+          <Route path="/review/myblog" element={<MyBlog />} />
           <Route path="create" element={<CreateReview />} />
+          <Route path="/myblog/edit/:id" element={<MyBlogEdit />} />
           <Route path="*" element={<Navigate to="/home" />} />
         </>
       ) : (
